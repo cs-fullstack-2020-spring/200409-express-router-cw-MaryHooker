@@ -1,7 +1,7 @@
 //Admin route
 
 let express = require('express');
-let router = express.Router;
+let router = express.Router();
 
 
 module.exports = router;
