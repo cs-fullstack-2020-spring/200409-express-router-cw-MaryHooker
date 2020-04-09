@@ -7,6 +7,9 @@ let app = express();
 //variable for port number
 let port = 2112;
 
+//tell express to use JSON middleware
+app.use(express.json());
+
 //import router modules
 let api = require('./routes/api.js');
 let admin = require('./routes/admin.js');
@@ -14,7 +17,6 @@ let admin = require('./routes/admin.js');
 //mount routes
 app.use('/api',api);
 app.use('/admin',admin);
-
 
 //Listen on port
 app.listen(port,()=>{
