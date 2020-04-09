@@ -19,4 +19,5 @@ router.post('/',(req,res)=>{
     res.send(req.body);
 });
 
+//export module
 module.exports = router;
